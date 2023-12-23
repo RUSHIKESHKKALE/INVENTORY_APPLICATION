@@ -1,0 +1,5 @@
+install multer-done
+changes in view-done
+middleware to handles files -done
+apply that middleware -done
+update controller to updates urls of img -done

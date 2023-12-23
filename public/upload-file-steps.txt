@@ -1,0 +1,6 @@
+
+1.install multer -Done
+2.changes in views -Done
+3.add middileware to handles the files -Done
+4.apply that middileware -Done
+5.update controller to updates url of images -Done
