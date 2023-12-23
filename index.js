@@ -1,3 +1,5 @@
+import dotenv from 'dotenv';
+dotenv.config();
 import express from "express";
 
 import productController from "./src/controller/product.controller.js";
@@ -18,6 +20,8 @@ import { auth } from "./src/middlewares/auth.middleware.js";
 import cookieparser from "cookie-parser";
 
 import { setLastVisit } from "./src/middlewares/lastVisite.middleware.js";
+
+const PORT=process.env.PORT ||3200;
 
 const server = express();
 
@@ -78,5 +82,5 @@ server.post("/login", usercontroller.postLogInForm);
 server.get("/logout", usercontroller.logout);
 
 server.listen(3300, () => {
-  console.log("server start listening on 3300");
+  console.log(`server starts listening on ${PORT}`);
 });
