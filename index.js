@@ -82,5 +82,5 @@ server.post("/login", usercontroller.postLogInForm);
 server.get("/logout", usercontroller.logout);
 
 server.listen(3300, () => {
-  console.log(`server starts listening on ${PORT}`);
+  console.log(`server start listening on ${PORT}`);
 });
